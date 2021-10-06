@@ -224,7 +224,7 @@ PRODUCT_PACKAGES += \
     gralloc.sdm845 \
     hwcomposer.sdm845 \
     libdisplayconfig.qti \
-    libqdMetaData \
+    libqdMetaData.vendor \
     libtinyxml \
     memtrack.sdm845 \
     vendor.display.config@1.0.vendor \
@@ -247,15 +247,6 @@ PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1 \
     android.hardware.biometrics.fingerprint@2.1-service \
     libstdc++.vendor
-
-# FM
-PRODUCT_PACKAGES += \
-    android.hardware.broadcastradio@1.0-impl \
-    FM2 \
-    libqcomfm_jni \
-    qcom.fmradio
-
-PRODUCT_BOOT_JARS += qcom.fmradio
 
 # GPS
 PRODUCT_PACKAGES += \
@@ -416,7 +407,16 @@ PRODUCT_PACKAGES += \
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH)
+    $(LOCAL_PATH) \
+    packages/apps/Bluetooth \
+    hardware/qcom-caf/sdm845/audio \
+    hardware/qcom-caf/sdm845/display \
+    hardware/qcom-caf/sdm845/media \
+    hardware/qcom-caf/common \
+    vendor/qcom/opensource/display-commonsys-intf
+
+#Headers
+PRODUCT_VENDOR_KERNEL_HEADERS := device/google/crosshatch/sdm845/kernel-headers
 
 # Telephony
 PRODUCT_PACKAGES += \
@@ -425,11 +425,10 @@ PRODUCT_PACKAGES += \
     qti-telephony-hidl-wrapper \
     qti_telephony_hidl_wrapper.xml \
     qti-telephony-utils \
-    qti_telephony_utils.xml \
-    telephony-ext
+    qti_telephony_utils.xml
 
-PRODUCT_BOOT_JARS += \
-    telephony-ext
+# Reduce system image size by limiting java debug info.
+PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
 
 # Tethering
 PRODUCT_PACKAGES += \
@@ -500,10 +499,4 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
     $(LOCAL_PATH)/configs/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini
 
-# WiFi Display
-PRODUCT_PACKAGES += \
-    libnl \
-    libwfdaac_vendor
 
-PRODUCT_BOOT_JARS += \
-    WfdCommon
