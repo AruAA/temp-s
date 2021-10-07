@@ -407,13 +407,7 @@ PRODUCT_PACKAGES += \
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH) \
-    packages/apps/Bluetooth \
-    hardware/qcom-caf/sdm845/audio \
-    hardware/qcom-caf/sdm845/display \
-    hardware/qcom-caf/sdm845/media \
-    hardware/qcom-caf/common \
-    vendor/qcom/opensource/display-commonsys-intf
+    $(LOCAL_PATH)
 
 #Headers
 PRODUCT_VENDOR_KERNEL_HEADERS := device/google/crosshatch/sdm845/kernel-headers
@@ -477,6 +471,80 @@ PRODUCT_PACKAGES += \
     android.hardware.vr@1.0-service \
     vr.sdm845
 
+# Vendor Hals
+PRODUCT_PACKAGES += \
+    android.frameworks.sensorservice@1.0 \
+    android.hardware.audio.effect@5.0.vendor \
+    android.hardware.audio.effect@6.0.vendor \
+    android.hardware.audio.effect@7.0.vendor \
+    android.hardware.audio@5.0.vendor \
+    android.hardware.audio@6.0.vendor \
+    android.hardware.audio@7.0.vendor \
+    android.hardware.authsecret@1.0.vendor \
+    android.hardware.biometrics.fingerprint@2.1.vendor \
+    android.hardware.bluetooth.a2dp@1.0.vendor \
+    android.hardware.bluetooth.audio@2.0.vendor \
+    android.hardware.bluetooth@1.0.vendor \
+    android.hardware.bluetooth@1.1.vendor \
+    android.hardware.drm@1.0.vendor \
+    android.hardware.drm@1.1.vendor \
+    android.hardware.drm@1.2.vendor \
+    android.hardware.drm@1.3.vendor \
+    android.hardware.gatekeeper@1.0.vendor \
+    android.hardware.gnss@1.0.vendor \
+    android.hardware.gnss@1.1.vendor \
+    android.hardware.gnss@2.0.vendor \
+    android.hardware.gnss@2.1.vendor \
+    android.hardware.input.classifier@1.0.vendor \
+    android.hardware.ir@1.0.vendor \
+    android.hardware.keymaster@3.0.vendor \
+    android.hardware.keymaster@4.0.vendor \
+    android.hardware.keymaster@4.1.vendor \
+    android.hardware.light@2.0.vendor \
+    android.hardware.oemlock@1.0.vendor \
+    android.hardware.neuralnetworks@1.0.vendor \
+    android.hardware.neuralnetworks@1.1.vendor \
+    android.hardware.neuralnetworks@1.2.vendor \
+    android.hardware.neuralnetworks@1.3.vendor \
+    android.hardware.power.stats@1.0.vendor \
+    android.hardware.power@1.0.vendor \
+    android.hardware.power@1.1.vendor \
+    android.hardware.power@1.2.vendor \
+    android.hardware.power@1.3.vendor \
+    android.hardware.radio.config@1.0.vendor \
+    android.hardware.radio.config@1.1.vendor \
+    android.hardware.radio.config@1.2.vendor \
+    android.hardware.radio.deprecated@1.0.vendor \
+    android.hardware.radio@1.0.vendor \
+    android.hardware.radio@1.1.vendor \
+    android.hardware.radio@1.2.vendor \
+    android.hardware.radio@1.3.vendor \
+    android.hardware.radio@1.4.vendor \
+    android.hardware.radio@1.5.vendor \
+    android.hardware.secure_element@1.0.vendor \
+    android.hardware.secure_element@1.1.vendor \
+    android.hardware.secure_element@1.2.vendor \
+    android.hardware.thermal@1.0.vendor \
+    android.hardware.thermal@1.1.vendor \
+    android.hardware.thermal@2.0.vendor \
+    android.hardware.usb.gadget@1.0.vendor \
+    android.hardware.usb.gadget@1.1.vendor \
+    android.hardware.vibrator@1.0.vendor \
+    android.hardware.vibrator@1.1.vendor \
+    android.hardware.vibrator@1.2.vendor \
+    android.hardware.vibrator@1.3.vendor \
+    android.hardware.vr@1.0.vendor \
+    android.hardware.weaver@1.0.vendor \
+    android.hardware.wifi.supplicant@1.0.vendor \
+    android.hardware.wifi.supplicant@1.1.vendor \
+    android.hardware.wifi.supplicant@1.2.vendor \
+    android.hardware.wifi.supplicant@1.3.vendor \
+    android.hidl.allocator@1.0.vendor \
+    android.system.net.netd@1.0.vendor \
+    android.system.net.netd@1.1.vendor \
+    libgui \
+    libgui_vendor
+    
 # WiFi
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service \
