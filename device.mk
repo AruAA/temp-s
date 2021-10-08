@@ -58,8 +58,7 @@ PRODUCT_COPY_FILES += \
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
@@ -303,10 +302,6 @@ PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.asus_Z01R \
     lights.sdm845
 
-# LiveDisplay
-PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.0-service-sdm
-
 # Media
 PRODUCT_PACKAGES += \
     libavservices_minijail \
@@ -541,9 +536,7 @@ PRODUCT_PACKAGES += \
     android.hardware.wifi.supplicant@1.3.vendor \
     android.hidl.allocator@1.0.vendor \
     android.system.net.netd@1.0.vendor \
-    android.system.net.netd@1.1.vendor \
-    libgui \
-    libgui_vendor
+    android.system.net.netd@1.1.vendor
     
 # WiFi
 PRODUCT_PACKAGES += \
