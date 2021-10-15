@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2018 The aospOS Project
+# Copyright (C) 2018 The Awaken Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_Z01R.mk
+    $(LOCAL_DIR)/awaken_Z01R.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_Z01R-user \
-    aosp_Z01R-userdebug \
-    aosp_Z01R-eng
+    awaken_Z01R-user \
+    awaken_Z01R-userdebug \
+    awaken_Z01R-eng
