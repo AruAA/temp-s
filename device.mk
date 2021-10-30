@@ -166,6 +166,8 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth.audio@2.0-impl:32 \
     audio.bluetooth.default \
     libbthost_if \
+    libldacBT_dec \
+    libldacBT_bco \
     vendor.qti.hardware.bluetooth_audio@2.0.vendor
 
 # Boot control
@@ -404,9 +406,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
-#Headers
-PRODUCT_VENDOR_KERNEL_HEADERS := device/google/crosshatch/sdm845/kernel-headers
-
 # Telephony
 PRODUCT_PACKAGES += \
     ims-ext-common \
@@ -416,6 +415,11 @@ PRODUCT_PACKAGES += \
     qti-telephony-utils \
     qti_telephony_utils.xml
 
+# WiFi Display
+PRODUCT_PACKAGES += \
+    libnl \
+    libwfdaac_vendor
+    
 # Reduce system image size by limiting java debug info.
 PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
 
@@ -560,4 +564,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
     $(LOCAL_PATH)/configs/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini
 
-
+# WiFi Display
+PRODUCT_PACKAGES += \
+    libnl \
+    libwfdaac_vendor
