@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/bliss_Z01R.mk
+    $(LOCAL_DIR)/evolution_Z01R.mk
 
 COMMON_LUNCH_CHOICES := \
-    bliss_Z01R-user \
-    bliss_Z01R-userdebug \
-    bliss_Z01R-eng
+    evolution_Z01R-user \
+    evolution_Z01R-userdebug \
+    evolution_Z01R-eng
