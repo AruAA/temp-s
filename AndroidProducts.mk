@@ -15,4 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/voltage_Z01R.mk
+    $(LOCAL_DIR)/evolution_Z01R.mk
+
+COMMON_LUNCH_CHOICES := \
+    evolution_Z01R-user \
+    evolution_Z01R-userdebug \
+    evolution_Z01R-eng
