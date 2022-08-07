@@ -1,0 +1,11 @@
+[
+  {
+    "repository": "kernel_asus_sdm845",
+    "target_path": "kernel/asus/sdm845"
+  }
+
+  {
+    "repository": "android_vendor_asus",
+    "target_path": "vendor/asus"
+  }
+]

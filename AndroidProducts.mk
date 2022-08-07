@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_Z01R.mk
+    $(LOCAL_DIR)/voltage_Z01R.mk
