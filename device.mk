@@ -282,8 +282,6 @@ PRODUCT_PACKAGES += \
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.allocator@1.0.vendor \
-    android.hidl.base@1.0 \
-    android.hidl.base@1.0_system \
     android.hidl.manager@1.0 \
     android.hidl.manager@1.0_system \
     android.hidl.memory@1.0.vendor \
@@ -291,6 +289,8 @@ PRODUCT_PACKAGES += \
     libhidltransport.vendor \
     libhwbinder \
     libhwbinder.vendor
+#    android.hidl.base@1.0 \
+#    android.hidl.base@1.0_system \
 
 # HotwordEnrollement app permissions
 PRODUCT_COPY_FILES += \
