@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_Z01R.mk
+    $(LOCAL_DIR)/bliss_Z01R.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_Z01R-user \
-    lineage_Z01R-userdebug \
-    lineage_Z01R-eng
+    bliss_Z01R-user \
+    bliss_Z01R-userdebug \
+    bliss_Z01R-eng
