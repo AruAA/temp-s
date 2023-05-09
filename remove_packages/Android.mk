@@ -4,7 +4,7 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := RemovePackages
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_TAGS := optional
-LOCAL_OVERRIDES_PACKAGES :=  Drive Maps MyVerizonServices SprintDM SprintHM YouTube YouTubeMusicPrebuilt GoogleFeedback RecorderPrebuilt Videos Ornament Photos Tycho GoogleFeedback GoogleCamera MyVerizonServices SprintDM SprintHM PrebuiltGmail OBDM_Permissions OemDmTrigger Snap Camera2 ScribePrebuilt Showcase SoundAmplifierPrebuilt SafetyHubPrebuilt PixelLiveWallpaperPrebuilt
+LOCAL_OVERRIDES_PACKAGES :=  Drive Maps MyVerizonServices SprintDM SprintHM YouTube YouTubeMusicPrebuilt GoogleFeedback RecorderPrebuilt Videos Ornament Photos Tycho GoogleFeedback GoogleCamera MyVerizonServices SprintDM SprintHM PrebuiltGmail OBDM_Permissions OemDmTrigger Snap Camera2 ScribePrebuilt Showcase SoundAmplifierPrebuilt SafetyHubPrebuilt PixelLiveWallpaperPrebuilt yetCalc Etar
 LOCAL_UNINSTALLABLE_MODULE := true
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_SRC_FILES := /dev/null
