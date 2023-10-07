@@ -21,6 +21,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o.mk)
 
 # Enable updating of APEXes
 #$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
+TARGET_FLATTEN_APEX := true
 
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal
@@ -120,7 +121,6 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.effect@6.0-impl:32 \
     android.hardware.audio.service \
     android.hardware.soundtrigger@2.1-impl:32 \
-    audio.a2dp.default \
     audio.r_submix.default \
     audio.usb.default \
     libqcompostprocbundle \
