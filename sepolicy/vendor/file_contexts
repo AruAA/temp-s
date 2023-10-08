@@ -48,3 +48,6 @@
 /firmware(/.*)?                                 u:object_r:firmware_file:s0
 /persist(/.*)?                                  u:object_r:mnt_vendor_file:s0
 /dsp(/.*)?					u:object_r:adsprpcd_file:s0
+
+# Keymaster
+#/(vendor|system/vendor)/bin/hw/android\.hardware\.keymaster@3\.0-service-qti u:object_r:hal_keymaster_qti_exec:s0

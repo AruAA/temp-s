@@ -6,9 +6,9 @@ init_daemon_domain(customize_early)
 
 allow customize_early init:unix_stream_socket connectto;
 allow customize_early kmsg_device:chr_file { getattr open write };
-allow customize_early mnt_vendor_file:dir search;
-allow customize_early persist_drm_file:dir search;
-allow customize_early persist_drm_file:file { open read };
+#allow customize_early mnt_vendor_file:dir search;
+#allow customize_early persist_drm_file:dir search;
+#allow customize_early persist_drm_file:file { open read };
 allow customize_early property_socket:sock_file write;
 allow customize_early sysfs_firmware:file { getattr open read };
 
